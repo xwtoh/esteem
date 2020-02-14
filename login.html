@@ -66,14 +66,17 @@ page.querySelector('.page__content').addEventListener('scroll', function (e) {
   if (isVisisble( $('#port2') )){  
 document.getElementById('mythX0').style.transform = "scale(1)";
 document.getElementById('mythX0').style.opacity = 0.7;
-document.getElementById('mythX0').style.transition = "1s"; 
-      
+document.getElementById('mythX0').style.transition = "1s";
+document.getElementById('modal0').style.transform = "translateY(0)";
+document.getElementById('modal0').style.transition = "1s ease";     document.getElementById('modal0').style.animationDelay = "1s ease";      
   } 
     else 
   {
 document.getElementById('mythX0').style.transform = "scale(3)";
 document.getElementById('mythX0').style.opacity = 0;
-document.getElementById('mythX0').style.transition = "1s"; 
+document.getElementById('mythX0').style.transition = "1s";
+document.getElementById('modal0').style.transform = "translateY(calc(100vh))";
+document.getElementById('modal0').style.transition = "1s ease";   
   }  
   });  
     
@@ -123,11 +126,22 @@ document.getElementById('aa').style.position = "fixed";
       
   });      
 })
+       
+function showModal2() {
+  var x = document.getElementById("modal0");
+    
+  if (x.style.transform === "translateY(calc(100vh))") {
+    x.style.transform = "translateY(0)";
+	x.style.transition = "1s ease";
+  } else {
+    x.style.transform = "translateY(calc(100vh))";
+	x.style.transition = "1s ease";
+  }
+}         
 
     </script>
-    
-    <ons-gesture-detector id="gesture">
-<div style="position: fixed; width: 100%; bottom: 49px; height: auto; z-index: 100; transition-duration: 1s;" onclick="showModal2()" id="modal0">
+
+<div style="position: fixed; width: 100%; bottom: 0px; height: auto; z-index: 100; transition-duration: 1s;" onclick="showModal2()" id="modal0">
             
 <p id="modalpara" style="color: #fff ;font-size: 15.4px; font-weight: bold; border-radius: 10px; margin: 0 5px 5px 5px;">
         By repeatedly exposing yourself to your OCD triggers, you can learn to resist the urge to complete your compulsive rituals. This is known asÂ <u><i>exposure &amp; response prevention (ERP)</i></u>.<br>
@@ -138,7 +152,7 @@ ERP requires you to repeatedly expose yourself to the source of your obsession â
             </p>
 
               
-    </div></ons-gesture-detector>
+    </div>
 
     
     
@@ -323,7 +337,7 @@ fill="#000000" stroke="none">
     
   <div style="padding: 0; font-size: 22px; text-align: center; width: 50%;">  
     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="200px" height="200px" viewBox="0 0 944.000000 1280.000000"
+ width="50%" height="auto" viewBox="0 0 944.000000 1280.000000"
  preserveAspectRatio="xMidYMid meet">
 <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
 fill="#000000" stroke="none">
@@ -349,7 +363,7 @@ fill="#000000" stroke="none">
     
   <div style="padding: 0; font-size: 22px; text-align: center; width: 50%; opacity: 0.7; transform: scaleX(-1);" id="rightface2"> 
     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="200px" height="200px" viewBox="0 0 944.000000 1280.000000"
+width="50%" height="auto" viewBox="0 0 944.000000 1280.000000"
  preserveAspectRatio="xMidYMid meet">
 <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
 fill="#000000" stroke="none">
@@ -384,7 +398,7 @@ fill="#000000" stroke="none">
 
 
     
-    <ons-row style="margin: 0; padding: 20px; background: #639CD9;">  
+    <ons-row onclick="showModal2()" style="margin: 0; padding: 20px; background: #639CD9;">  
 <div class="box1 full" style="padding: 0; font-size: 22px;">
     <img id="mythX0" src="myth.png" width="auto" height="100%" style="position: absolute; top: 0; left: 0; right: 0; margin: auto;">
     

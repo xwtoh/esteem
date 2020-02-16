@@ -19,6 +19,9 @@
   document.querySelector('#navigator').bringPageTop(page, { animation: 'fade' });
 };
             
+      ons.ready(function() {
+     $('.page__content').css('-webkit-overflow-scrolling', 'auto');       
+      });        
 
 window.fn = {};
 window.fn.toggle = function(el) {

@@ -37,23 +37,23 @@ window.fn.toggle = function(el) {
 }
         
 function changeTab() {
-  document.getElementById('OCDtabbar').setActiveTab(1);
+  document.getElementById('rangetabbar').setActiveTab(1);
 }
 
 function changeTab2() {
-  document.getElementById('panictabbar').setActiveTab(1);
+  document.getElementById('researchtabbar').setActiveTab(1);
 }
             
 function changeTab3() {
-  document.getElementById('tipstabbar').setActiveTab(1);
+  document.getElementById('awaretabbar').setActiveTab(1);
 }
             
 function changeTab4() {
-  document.getElementById('deptabbar').setActiveTab(1);
+  document.getElementById('egotabbar').setActiveTab(1);
 }   
             
 function changeTab5() {
-  document.getElementById('gadtabbar').setActiveTab(1);
+  document.getElementById('impacttabbar').setActiveTab(1);
 }               
 
         function showModal() {
@@ -70,6 +70,83 @@ function changeTab5() {
     </script>
     
 <style>  
+.eyes * {
+    animation: growShake .5s ease infinite;
+    transform-origin: center center; 
+  }
+
+@keyframes growShake {
+  0% {
+    transform: scale(1) rotate(0);
+  }
+  25% {
+    transform: scale(1.1) rotate(25deg);
+  }
+  50% {
+    transform: scale(1) rotate(-15deg);    
+  }
+  75% {
+    transform: scale(1.2) rotate(10deg);    
+  }
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+    
+    
+.made-with-love{
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 10px;
+  font-family: arial;
+  color: #fff;
+  i{
+    font-style: normal;
+    color: #F50057;
+    font-size: 14px;
+    position: relative;
+    top: 2px;
+  }
+  a{
+    color: #fff;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+    
+#lid {
+  animation: blink 1.4s infinite;
+}
+#eye {
+  animation: squeeze 1.4s infinite;
+}
+
+@keyframes blink {
+  90% {
+    transform: none;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(15px) scaleY(0)
+  }
+  100% {
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes squeeze {
+  90% {
+    transform: none;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(3px) scaleY(0.8)
+  }
+  100% {
+    animation-timing-function: ease-out;
+  }
+}    
     
 .triangle-right {
 	width: 0;

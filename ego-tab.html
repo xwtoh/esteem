@@ -1,0 +1,351 @@
+<ons-page>
+  <script>
+
+      
+      document.addEventListener('prechange', function(event) {
+  document.querySelector('ons-toolbar .center')
+    .innerHTML = event.tabItem.getAttribute('label');
+});
+
+    </script>
+    
+    <script>
+           function changesize2(){
+    $('#video2').toggleClass('expand');
+    $('.tfbutton2').toggleClass('hide');
+    $('.tfbutton0').toggleClass('hide');
+        $('#video10').toggleClass('mini');
+        $('#space2').toggleClass('mini');
+}  
+        
+               function changesize3(){
+    $('#video3').toggleClass('expand');
+    $('.tfbutton2').toggleClass('hide');
+    $('.tfbutton0').toggleClass('hide');
+        $('#video20').toggleClass('mini');
+        $('#space3').toggleClass('mini');
+}      
+                        function para10() {
+    $('#para10').toggleClass('expand');
+ $('#parabutton10').toggleClass('expand');
+
+}
+    </script>
+    
+    
+
+    <!--
+                <script>
+       function changesize(){
+    $('#video').toggleClass('expand');
+    $('.tfbutton2').toggleClass('hide');
+    $('.tfbutton0').toggleClass('hide');
+        $('#video1').toggleClass('mini');
+        $('#space0').toggleClass('mini');
+}
+        </script>-->
+      
+
+    
+  <ons-tabbar swipeable id="egotabbar">
+    <ons-tab page="ego.html" label="Ego"></ons-tab>
+     <ons-tab page="ego2.html" label="Self-awareness"></ons-tab>
+  </ons-tabbar>
+    
+    
+<template id="ego.html">
+    
+<ons-page id="ego">
+  <ons-toolbar id="top17">
+    <div class="left">
+<ons-back-button></ons-back-button>
+    </div>
+    <div class="center">Self-esteem &amp; ego</div>
+      <div class="right">
+          <ons-toolbar-button onclick="loadPage('tips.html')">Next</ons-toolbar-button>
+      </div>
+  </ons-toolbar>
+    
+<ons-row style="margin: 0; padding: 20px;background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px;">
+    
+    <p style="color: #000; font-size: 26px"><b><span style="font-size: 34px;">Depression</span>
+        </b><br><br><span style="color: #000; font-size: 26px;">Depression is classified as a mood disorder. It may be described as feelings of sadness, loss, or anger that interfere with a person’s everyday activities. It is a common and serious medical illness that negatively affects how you feel, the way you think and how you act. <br><br>
+Depression causes feelings of sadness and/or a loss of interest in activities once enjoyed. It can lead to a variety of emotional and physical problems and can decrease a person’s ability to function at work and at home.<br><br>
+But remember that depression is treatable!</span>
+</p>
+
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: transparent;">
+    
+    <p>
+</p>
+
+      
+
+    </div>    </ons-row>
+             
+    <div id="video2" class="box1 full" style="padding: 0; font-size: 22px; background: transparent;">
+<iframe id="video10" style="width: 100%;" src="https://www.youtube.com/embed/TVLoxm_Eick" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+              <div class="tfbutton0" style="text-align: center; background: transparent; width: auto; margin: 0; padding: 0" onclick="changesize2()">
+                  <p style="padding: 10px 0; margin: 0; background: white; border-radius: 30px; font-size: 70%; color: #00a3e0; box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);margin: 10px; width: auto; position: relative"><b>Minimise&nbsp;&nbsp;&nbsp;&nbsp;</b><span style="position: absolute; right: 20px;"><ons-icon color="#00a3e0" size="18px" icon="md-window-minimize" style="vertical-align: middle;"></ons-icon></span></p>
+    </div>
+    
+                  <div class="tfbutton2 hide" style="text-align: center; background: transparent; width: auto; margin: 0; padding: 0" onclick="changesize2()">
+                      <p style="padding: 10px 0; margin: 0; background: white; border-radius: 30px; font-size: 70%; color: #00a3e0; box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19); width: auto; position: relative"><b>Maximise&nbsp;&nbsp;&nbsp;&nbsp;</b><span style="position: absolute; right: 20px;" ><ons-icon color="#00a3e0" size="18px" icon="md-window-maximize" style="vertical-align: middle"></ons-icon></span></p>
+    </div>
+
+          </div>
+    
+    <ons-row style="text-align: center; background-color: #eaeaea">  
+<ons-col class="box1" width="100%" style="padding: 40px 0; font-size: 26px">
+    
+    <p style="font-size: 26px; padding: 10px 0; color: #000;"><b>How do you recognise signs and symptoms of depression?</b></p>
+
+    </ons-col>
+
+    </ons-row>    
+    
+    <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #ff7e67;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Signs
+        </b><br><br><span style="color: #fff; font-size: 22px; font-weight: 300;">
+</span>
+</p>
+
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #fff">
+    
+    <p style="color: #fff; font-size: 22px"><b>
+        </b><span style="color: #000; font-size: 70%; font-weight: bold;">
+&#8226;&nbsp;Feeling sad for a prolonged period of time<br>
+&#8226;&nbsp;Loss of interest or pleasure in activities once enjoyed<br>
+&#8226;&nbsp;Changes in appetite — weight loss or gain unrelated to dieting<br>
+&#8226;&nbsp;Trouble sleeping or sleeping too much<br>
+&#8226;&nbsp;Loss of energy or increased fatigue<br>
+&#8226;&nbsp;Increase in purposeless physical activity or slowed movements and speech <br>
+&#8226;&nbsp;Feeling worthless or guilty<br>
+&#8226;&nbsp;Difficulty thinking, concentrating or making decisions<br>
+&#8226;&nbsp;Thoughts of death or suicide<br><br>
+        <i><b>Please do note that these symptoms must last at least two weeks for a diagnosis of depression.</b></i>
+        </span>
+</p>
+
+      
+
+    </div>
+               
+
+    </ons-row>
+    
+    
+                 
+    <div id="video3" class="box1 full" style="padding: 0; font-size: 22px; background: transparent;">
+<iframe id="video20" style="width: 100%;" src="https://www.youtube.com/embed/yikyGL5XT84" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+              <div class="tfbutton0" style="text-align: center; background: transparent; width: auto; margin: 0; padding: 0" onclick="changesize3()">
+                  <p style="padding: 10px 0; margin: 0; background: white; border-radius: 30px; font-size: 70%; color: #00a3e0; box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);margin: 10px; width: auto; position: relative"><b>Minimise&nbsp;&nbsp;&nbsp;&nbsp;</b><span style="position: absolute; right: 20px;"><ons-icon color="#00a3e0" size="18px" icon="md-window-minimize" style="vertical-align: middle;"></ons-icon></span></p>
+    </div>
+    
+                  <div class="tfbutton2 hide" style="text-align: center; background: transparent; width: auto; margin: 0; padding: 0" onclick="changesize3()">
+                      <p style="padding: 10px 0; margin: 0; background: white; border-radius: 30px; font-size: 70%; color: #00a3e0; box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19); width: auto; position: relative"><b>Maximise&nbsp;&nbsp;&nbsp;&nbsp;</b><span style="position: absolute; right: 20px;" ><ons-icon color="#00a3e0" size="18px" icon="md-window-maximize" style="vertical-align: middle"></ons-icon></span></p>
+    </div>
+
+          </div>
+    
+        <ons-row style="margin: 0; padding: 20px;background: #eaeaea;">  
+      <div class="full" style="width: 100%; text-align: center; margin: 20px;">
+          <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; color: #ff7e67; font-size: 15.4px"><b>Swipe for more info</b>&nbsp;&nbsp;&nbsp;&nbsp;<ons-icon size="18px" icon="md-long-arrow-tab"></ons-icon></p>
+    
+        </div>
+        
+        </ons-row>
+</ons-page>
+    
+    
+    </template>    
+    
+<template id="ego2.html">
+
+    <ons-page id="ego2">
+  <ons-toolbar id="top09">
+    <div class="left">
+<ons-back-button></ons-back-button>
+    </div>
+    <div class="center">Self-esteem &amp; self-awareness</div>
+      <div class="right">
+          <ons-toolbar-button onclick="loadPage('tips.html')">Next</ons-toolbar-button>
+      </div>
+  </ons-toolbar>
+    
+<ons-row style="margin: 0; padding: 20px;background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px;">
+    
+    <p style="color: #000; font-size: 26px"><b><span style="font-size: 34px;">What can you do to cope with depression?</span>
+        </b><br><br><span style="color: #000; font-size: 26px;"></span>
+</p>
+
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: transparent;">
+    
+    <p>
+</p>
+
+      
+
+    </div>    </ons-row>
+    
+              <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #ff7e67;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Reach out and stay connected
+        </b><br><br><span style="color: #fff; font-size: 22px; font-weight: 300;"></span>
+</p>
+
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #fff">
+    
+    <p style="color: #fff; font-size: 22px"><b>
+        </b><span style="color: #000; font-size: 70%; font-weight: bold;">
+When you’re depressed, the tendency is to withdraw and isolate so that connecting to even close family members and friends can be tough.<br><br>
+You may feel too exhausted to talk, ashamed at your situation, or guilty for neglecting certain relationships. But this is just the depression talking. <br><br>
+Staying connected to other people and taking part in social activities will make a world of difference in your mood and outlook. Reaching out is not a sign of weakness and it won’t mean you’re a burden to others. <br><br>
+Your loved ones care about you and want to help. And if you don’t feel that you have anyone to turn to, it’s never too late to build new friendships and improve your support network.
+        </span>
+
+</p>
+
+
+            
+        </div>
+        
+    </ons-row>  
+    
+    
+    
+    <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #ff7e67;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Do things that make you feel good
+        </b><br><br><span style="color: #fff; font-size: 22px; font-weight: 300;"></span>
+</p>
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #fff">
+    
+    <p style="color: #fff; font-size: 22px"><b>
+        </b><span style="color: #000; font-size: 70%; font-weight: bold;">
+In order to overcome depression, you have to do things that relax and energize you. <br><br>
+This includes following a healthy lifestyle, learning how to better manage stress, setting limits on what you’re able to do, and scheduling fun activities into your day.<br><br>
+While you can’t force yourself to have fun or experience pleasure, you can push yourself to do things, even when you don’t feel like it. <br><br>
+You might be surprised at how much better you feel once you’re out in the world. Even if your depression doesn’t lift immediately, you’ll gradually feel more upbeat and energetic as you make time for fun activities.<br><br>
+Pick up a former hobby or a sport you used to like. Express yourself creatively through music, art, or writing. Go out with friends. Take a day trip to a museum, the mountains, or the ballpark.
+
+        </span>
+</p>
+    </div>
+    </ons-row>
+
+
+        <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #ff7e67;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Get Moving
+        </b><br><br><span style="color: #fff; font-size: 22px; font-weight: 300;"></span>
+</p>
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #fff">
+    
+    <p style="color: #fff; font-size: 22px"><b>
+        </b><span style="color: #000; font-size: 70%; font-weight: bold;">
+Move! Because exercise is a powerful depression fighter. and one of the most important tools in your recovery arsenal.<br><br> 
+Regular exercise can be as effective as medication for relieving depression symptoms. It also helps prevent relapse once you’re well.<br><br>
+To get the most benefit, aim for at least 30 minutes of exercise per day. 
+        </span>
+</p>
+    </div>
+    </ons-row>
+
+        <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #ff7e67;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Eat a healthy, depression-fighting diet
+        </b><br><br><span style="color: #fff; font-size: 22px; font-weight: 300;"></span>
+</p>
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #fff">
+    
+    <p style="color: #fff; font-size: 22px"><b>
+        </b><span style="color: #000; font-size: 70%; font-weight: bold;">
+What you eat has a direct impact on the way you feel. <br><br>
+Reduce your intake of foods that can adversely affect your brain and mood, such as caffeine, alcohol, trans fats, and foods with high levels of chemical preservatives or hormones (such as certain meats).<br><br>
+Don’t skip meals. Going too long between meals can make you feel irritable and tired, so aim to eat something at least every three to four hours.<br><br>
+Minimize sugar and refined carbs. <br><br>
+Boost your B vitamins. Deficiencies in B vitamins such as folic acid and B-12 can trigger depression. To get more, take a B-complex vitamin supplement or eat more citrus fruit, leafy greens, beans, chicken, and eggs.<br><br>
+Boost your mood with foods rich in omega-3 fatty acids. Omega-3 fatty acids play an essential role in stabilizing mood. The best sources are fatty fish such as salmon, herring, mackerel, anchovies, sardines, tuna, and some cold-water fish oil supplements.
+        </span>
+</p>
+    </div>
+    </ons-row>
+           
+    <ons-row style="margin: 0; padding: 20px; background: #EAEAEA;">  
+<div class="box1 half left10" style="padding: 0; font-size: 22px;">
+    
+    <p style="color: #000; font-size: 26px"><b><span style="font-size: 34px;">Finally, seek professional support</span>
+        </b><br><br><span style="color: #000; font-size: 26px;">If you’ve taken self-help steps and made positive lifestyle changes and still find your depression getting worse, seek professional help.<br><br>
+        <span style="font-weight: 300"><i>Needing additional help doesn’t mean you’re weak!</i></span><br><br>
+ Sometimes the negative thinking in depression can make you feel like you’re a lost cause, but remember that depression can be treated and you can feel better!
+</span></p> 
+
+    </div>
+               
+ <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #333; border-radius: 10px; position: relative;" id="para10">
+    
+        <p style="color: #fff; font-size: 21px; padding: 40px; font-weight: 300; margin: 40px;"><b>When it becomes too severe</b><br><br><span style="font-size: 15.4px; font-weight: bold">
+Based on one’s condition, the healthcare professional will take multiple factors into consideration before deciding on the treatment or whether to prescribe any medication.<br><br>
+ <span style="padding: 0 10px; background: #fff; color: #000; border-radius: 30px;">Psychotherapy</span><br>One way that depression can be managed is through one of the types of psychotherapy.
+Psychotherapy involves discussing your problems and how you feel with a trained therapist. Your therapist can help you detect patterns of thought or behaviour that contribute to your depression. You may be given homework, such as tracking your moods or writing in journals. This will help you to continue your treatment outside of appointments. Your therapist can also teach you exercises to reduce stress and anxiety, and help you understand your illness. A therapist can also help you create strategies to identify and avoid any triggers that exacerbate your depression. They can also help you develop coping mechanisms for when you experience these triggers.
+
+
+            </span></p>
+    
+<div style="width: 100%; text-align: center; margin: 20px; position: absolute; bottom: 0; margin: 0; height: 80px; background: #333; vertical-align: middle; align-content: center; opacity: 1; text-align: center" onclick="para10()">
+    <p class="tfbutton" style=" width: 20px; margin: 25px auto auto auto; padding: 0 20px; background: #fff; border-radius: 30px; font-size: 70%; color: #000; align-content: center"><ons-icon size="20px" id="parabutton10" icon="md-caret-down"></ons-icon></p>    
+        </div>
+
+        </div> 
+    </ons-row>
+        
+            <ons-row style="margin: 0; padding: 20px;background: #eaeaea;">  
+      <div class="full" style="width: 100%; text-align: center; margin: 20px;">
+          <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; color: #ff7e67; font-size: 15.4px"><b>Swipe for more info</b>&nbsp;&nbsp;&nbsp;&nbsp;<ons-icon rotate="180" size="18px" icon="md-long-arrow-tab"></ons-icon></p>
+    
+        </div>
+        
+        </ons-row>
+
+</ons-page>
+    
+    
+    </template>
+    
+    
+
+    
+</ons-page>
